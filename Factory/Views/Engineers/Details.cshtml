@@ -1,6 +1,6 @@
-@* @{
+@{
   Layout = "_Layout";
-} *@
+}
 
 @using System;
 
@@ -32,7 +32,7 @@ else
   </ul>
 }
 
-<p>@Html.ActionLink("Add a Course", "AddCourse", new { id = Model.EngineerId })</p>
+<p>@Html.ActionLink("Add a Machine", "AddMachine", new { id = Model.EngineerId })</p>
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
 <p>@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId })</p>
