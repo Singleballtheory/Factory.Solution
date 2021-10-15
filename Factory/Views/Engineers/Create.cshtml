@@ -1,0 +1,35 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer
+
+<div class="jumbotron">
+<h4>Add an Engineer</h4>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      @using (Html.BeginForm())
+      {
+        @Html.LabelFor(model => model.Name)
+        <br>
+        @Html.TextBoxFor(model => model.Name)
+        <hr>
+        @Html.LabelFor(model => model.HireDate)
+        <br>
+        @Html.EditorFor(model => model.HireDate)
+        <hr>
+        @Html.Label("Select course")
+        <br>
+        @Html.DropDownList("MachineId")
+        <hr>
+        <input type="submit" value="Add new Engineer" />
+      }
+    </div>
+  </div>
+  <div class="col-md-8">
+
+  </div>
+</div>
+<p>@Html.ActionLink("Show all Engineers", "Index")</p>
