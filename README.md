@@ -42,7 +42,7 @@ Dr. Sillystringz has a factory that makes hot garbage all day long. But he still
 * In that terminal run *mysql -uroot -p<YOUR_PASSWORD>* (again, replacing with your actual password)
 * Open MySQL Workbench
 * Return to your text editor
-* Navigate to the HairSalon.Solution/HairSalon folder level (if you are not already there)
+* Navigate to the Factory.Solution/Factory folder level (if you are not already there)
 * Run *dotnet ef migrations add Initial*
 * Run *dotnet ef database update*
 * Run *dotnet restore*
